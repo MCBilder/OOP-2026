@@ -5,8 +5,7 @@ Programowanie Obiektowe Java
 
 1. [Temat 1: Podstawy OOP](#temat-1-podstawy-oop)
 2. [Temat 2: Zaawansowane Koncepty](#temat-2-zaawansowane-koncepty)
-3. [Temat 3: Plytka i gleboka kopia](#Temat 3: Plytka i gleboka kopia)
-3. 
+3. [Temat 3: Plytka i gleboka kopia](#temat-3-Plytka-i-gleboka-kopia)
 
 ---
 
@@ -37,6 +36,8 @@ Zaawansowane zagadnienia z OOP:
 - Teoria i opis
 - Praktyczne implementacje
 - Zadania do samodzielnego rozwiązania
+
+---
 
 ## Temat 3: Plytka i gleboka kopia
 

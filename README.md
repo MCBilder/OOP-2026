@@ -61,7 +61,43 @@ Zaawansowane zagadnienia z OOP:
 Zaawansowane zagadnienia z OOP:
 - 
 
-### Zawartość:
--
+### Odczytywanie Pliku:
+- File -> wskazuje plik.
+- Scanner -> czyta dane z pliku.
+- while -> czyta linie po linii.
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            // wskazanie pliku
+            File plik = new File("dane.txt");
+
+            // otwarcie pliku do czytania
+            Scanner scanner = new Scanner(plik);
+
+            // czytanie linia po linii
+            while (scanner.hasNextLine()) {
+
+                String linia = scanner.nextLine();
+
+                System.out.println(linia);
+            }
+
+            // zamkniecie skanera
+            scanner.close();
+
+        } catch (FileNotFoundException e) {
+
+            System.out.println("Nie znaleziono pliku.");
+            e.printStackTrace();
+        }
+    }
+}
 ---

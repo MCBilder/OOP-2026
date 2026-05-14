@@ -129,9 +129,84 @@ public class Main {
 }
 ```
 
-### Zawartość:
-- 
+### Tworzenie ArrayList
+```
+ArrayList<TYP> nazwa = new ArrayList<>();
+```
+#### Dodawanie
+```
+lista.add(to co dodajemu);
+```
+#### Pobieranie elementow
+get(index)
+```
+lista.get(0);
+```
+#### Rozmiar listy
+```
+lista.size();
+```
+#### Petla po liscie
+```
+for(String element : lista) {
 
+    System.out.println(element);
+}
+```
+##### lub
+```
+for(int i = 0; i < lista.size(); i++) {
+
+    System.out.println(lista.get(i));
+}
+```
+#### Usuwanie elementów
+##### Po indeksie
+```
+lista.remove(0);
+```
+##### Po wartosci
+```
+lista.remowe("Adam");
+```
+#### Sprawdzanie czy element istnieje
+```
+lista.contains("Adam")
+```
+#### Czyszczenie listy
+```
+lista.clear();
+```
+#### Sortowanie listy
+```
+Collections.sort(lista);
+```
+### Łączenie list
+```
+lista1.addAll(lista2);
+```
+---
+### Kopiowanie listy - BARDZO WAŻNE
+```
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        ArrayList<String> lista =
+                new ArrayList<>();
+
+        lista.add("Adam");
+        lista.add("Kasia");
+
+        ArrayList<String> kopia =
+                new ArrayList<>(lista);
+
+        System.out.println(kopia);
+    }
+}
+```
 ---
 
 ## Temat 5: Pliki
@@ -191,7 +266,7 @@ String linia = scanner.nextLine();
 ```
 System.out.println(linia);
 ```
-   lub
+##### lub
 ```
 int liczba = Integer.parseInt(linia);
 ```

@@ -52,7 +52,7 @@ Zaawansowane zagadnienia z OOP:
 - 
 
 ### Zawartość:
--
+- 
 
 ---
 
@@ -62,9 +62,34 @@ Zaawansowane zagadnienia z OOP:
 - 
 
 ### Odczytywanie Pliku:
+1. Otwieranie pliku
+```
+Scanner scanner = new Scanner(plik);
+```
+2.czytanie w petli
+```
+while(scanner.hasNextLine())
+```
+3. Pobieranie linii
+```
+String linia = scanner.nextLine();
+```
+4. Operacje na danych
+```
+System.out.println(linia);
+```
+lub
+```
+int liczba = Integer.parseInt(linia);
+```
+5. Zamykanie pliku
+```
+scanner.close();
+```
 - File -> wskazuje plik.
 - Scanner -> czyta dane z pliku.
 - while -> czyta linie po linii.
+
 ```
 import java.io.File;
 import java.io.FileNotFoundException;

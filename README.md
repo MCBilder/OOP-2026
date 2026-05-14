@@ -65,7 +65,7 @@ Zaawansowane zagadnienia z OOP:
 - File -> wskazuje plik.
 - Scanner -> czyta dane z pliku.
 - while -> czyta linie po linii.
-
+```
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -100,4 +100,18 @@ public class Main {
         }
     }
 }
+```
+#### Najczestrze modyfikacje
+- Liczeni linii
+```
+int licznik = 0;
+
+while(scanner.hasNextLine()) {
+
+    scanner.nextLine();
+    licznik++;
+}
+
+System.out.println(licznik);
+```
 ---

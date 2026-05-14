@@ -124,6 +124,15 @@ public class Main {
     }
 }
 ```
+Jezeli plik ma liczby
+```
+while(scanner.hasNextLine()) {
+
+    String linia = scanner.nextLine();
+
+    // operacje na linii
+}
+```
 ### Najczestrze modyfikacje
 #### Liczeni linii
 ```

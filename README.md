@@ -66,7 +66,7 @@ Zaawansowane zagadnienia z OOP:
 ```
 Scanner scanner = new Scanner(plik);
 ```
-2.czytanie w petli
+  2.czytanie w petli
 ```
 while(scanner.hasNextLine())
 ```
@@ -78,7 +78,7 @@ String linia = scanner.nextLine();
 ```
 System.out.println(linia);
 ```
-lub
+  lub
 ```
 int liczba = Integer.parseInt(linia);
 ```

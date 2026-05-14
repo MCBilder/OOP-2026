@@ -101,8 +101,8 @@ public class Main {
     }
 }
 ```
-#### Najczestrze modyfikacje
-- Liczeni linii
+### Najczestrze modyfikacje
+####Liczeni linii
 ```
 int licznik = 0;
 
@@ -113,5 +113,61 @@ while(scanner.hasNextLine()) {
 }
 
 System.out.println(licznik);
+```
+####Szukanie konkretnego slowa
+```
+while(scanner.hasNextLine()) {
+
+                String linia = scanner.nextLine();
+
+                if(linia.contains("Java")) {
+
+                    System.out.println("Znaleziono slowo Java");
+                }
+            }
+```
+####Wypisywanie tylko liczb wiekszych od X
+```
+while(scanner.hasNextLine()) {
+
+                String linia = scanner.nextLine();
+
+                int liczba = Integer.parseInt(linia);
+
+                if(liczba > 50) {
+
+                    System.out.println(liczba);
+                }
+            }
+```
+####Sumowanie liczb z pliku
+```
+int suma = 0;
+
+            while(scanner.hasNextLine()) {
+
+                int liczba = Integer.parseInt(scanner.nextLine());
+
+                suma += liczba;
+            }
+
+            System.out.println("Suma = " + suma);
+
+            scanner.close();
+```
+####Odczytywanie danych rozdzielonych srednikiem
+```
+while(scanner.hasNextLine()) {
+
+                String linia = scanner.nextLine();
+
+                String[] dane = linia.split(";");
+
+                String imie = dane[0];
+                int wiek = Integer.parseInt(dane[1]);
+
+                System.out.println(imie);
+                System.out.println(wiek);
+            }
 ```
 ---

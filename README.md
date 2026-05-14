@@ -63,7 +63,7 @@ Podsumowanie:
 ```
 Scanner scanner = new Scanner(plik);
 ```
-   2.czytanie w petli
+2. czytanie w petli
 ```
 while(scanner.hasNextLine())
 ```

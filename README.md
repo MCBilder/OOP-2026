@@ -102,7 +102,7 @@ public class Main {
 }
 ```
 ### Najczestrze modyfikacje
-####Liczeni linii
+#### Liczeni linii
 ```
 int licznik = 0;
 
@@ -114,7 +114,7 @@ while(scanner.hasNextLine()) {
 
 System.out.println(licznik);
 ```
-####Szukanie konkretnego slowa
+#### Szukanie konkretnego slowa
 ```
 while(scanner.hasNextLine()) {
 
@@ -126,7 +126,7 @@ while(scanner.hasNextLine()) {
                 }
             }
 ```
-####Wypisywanie tylko liczb wiekszych od X
+#### Wypisywanie tylko liczb wiekszych od X
 ```
 while(scanner.hasNextLine()) {
 
@@ -140,7 +140,7 @@ while(scanner.hasNextLine()) {
                 }
             }
 ```
-####Sumowanie liczb z pliku
+#### Sumowanie liczb z pliku
 ```
 int suma = 0;
 
@@ -155,7 +155,7 @@ int suma = 0;
 
             scanner.close();
 ```
-####Odczytywanie danych rozdzielonych srednikiem
+#### Odczytywanie danych rozdzielonych srednikiem
 ```
 while(scanner.hasNextLine()) {
 

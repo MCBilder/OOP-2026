@@ -121,7 +121,7 @@ ArrayList<String> b =
 ```
 ---
 ### kopie dla obiektu
-####Plytka kopia
+#### Plytka kopia
 ```
 ArrayList<Osoba> lista2 =
         new ArrayList<>(lista1);

@@ -56,7 +56,7 @@ Zaawansowane zagadnienia z OOP:
 
 ---
 
-## Temat 4: Pliki
+## Temat 5: Pliki
 1. Otwieranie pliku
 ```
 Scanner scanner = new Scanner(plik);

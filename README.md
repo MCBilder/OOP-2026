@@ -7,7 +7,7 @@ Programowanie Obiektowe Java
 2. [Temat 2: Tablice](#temat-2-Tablice)
 3. [Temat 3: Plytka i gleboka kopia](#temat-3-Plytka-i-gleboka-kopia)
 4. [Temat 4: Listy](#temat-4-Listy)
-5. [Temat 4: Pliki](#temat-4-Pliki)
+5. [Temat 5: Pliki](#temat-4-Pliki)
 
 ---
 

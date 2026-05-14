@@ -58,15 +58,12 @@ Zaawansowane zagadnienia z OOP:
 
 ## Temat 4: Pliki
 
-Zaawansowane zagadnienia z OOP:
-- 
-
-### Odczytywanie Pliku:
+Podsumowanie:
 1. Otwieranie pliku
 ```
 Scanner scanner = new Scanner(plik);
 ```
-  2.czytanie w petli
+   2.czytanie w petli
 ```
 while(scanner.hasNextLine())
 ```
@@ -78,7 +75,7 @@ String linia = scanner.nextLine();
 ```
 System.out.println(linia);
 ```
-  lub
+   lub
 ```
 int liczba = Integer.parseInt(linia);
 ```
@@ -86,6 +83,9 @@ int liczba = Integer.parseInt(linia);
 ```
 scanner.close();
 ```
+
+
+### Odczytywanie Pliku:
 - File -> wskazuje plik.
 - Scanner -> czyta dane z pliku.
 - while -> czyta linie po linii.

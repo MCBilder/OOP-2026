@@ -7,7 +7,7 @@ Programowanie Obiektowe Java
 2. [Temat 2: Tablice](#temat-2-Tablice)
 3. [Temat 3: Plytka i gleboka kopia](#temat-3-Plytka-i-gleboka-kopia)
 4. [Temat 4: Listy](#temat-4-Listy)
-5. [Temat 5: Pliki](#temat-4-Pliki)
+5. [Temat 5: Pliki](#temat-5-Pliki)
 
 ---
 
@@ -83,14 +83,62 @@ int[] kopia = liczby.clone();
 ---
 
 ## Temat 3: Plytka i gleboka kopia
+### Tablica []
+#### Plytka kopia
+```
+int[] a = {1, 2, 3};
 
-Zaawansowane zagadnienia z OOP:
-- 
+int[] b = a;  // płytka kopia
+```
+#### Gleboka kopia
+```
+int[] a = {1, 2, 3};
 
-### Zawartość:
--
+int[] b = a.clone();
+```
+##### lub
+```
+int[] b = new int[a.length];
 
+for(int i = 0; i < a.length; i++) {
+
+    b[i] = a[i];
+}
+```
 ---
+### ArrayList 
+#### Plytka kopia
+```
+ArrayList<String> a = new ArrayList<>();
+a.add("Adam");
+
+ArrayList<String> b = a;
+```
+#### Gleboka kopia
+```
+ArrayList<String> b =
+        new ArrayList<>(a);
+```
+---
+### kopie dla obiektu
+####Plytka kopia
+```
+ArrayList<Osoba> lista2 =
+        new ArrayList<>(lista1);
+```
+kopiuje listę ale NIE kopiuje obiektów w środku
+#### Gleboka kopia
+```
+ArrayList<Osoba> kopia = new ArrayList<>();
+
+for(Osoba o : lista) {
+
+    Osoba nowa = new Osoba();
+    nowa.imie = o.imie;
+
+    kopia.add(nowa);
+}
+```
 
 ## Temat 4: Listy
 

@@ -48,8 +48,86 @@ Zaawansowane zagadnienia z OOP:
 
 ## Temat 4: Listy
 
-Zaawansowane zagadnienia z OOP:
-- 
+### Pliki a ArrayList
+#### odczyt i dopisnaie do listy
+```
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            // lista
+            ArrayList<String> lista = new ArrayList<>();
+
+            // plik
+            File plik = new File("dane.txt");
+
+            // scanner
+            Scanner scanner = new Scanner(plik);
+
+            // odczyt pliku
+            while(scanner.hasNextLine()) {
+
+                String linia = scanner.nextLine();
+
+                // dodanie do listy
+                lista.add(linia);
+            }
+
+            scanner.close();
+
+            // wyswietlenie listy
+            for(String element : lista) {
+
+                System.out.println(element);
+            }
+
+        } catch(Exception e) {
+
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+#### odczyt listy i zapisanie do pliku
+```
+import java.io.FileWriter;
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            ArrayList<String> lista = new ArrayList<>();
+
+            lista.add("Adam");
+            lista.add("Kasia");
+            lista.add("Ola");
+
+            FileWriter writer =
+                    new FileWriter("wynik.txt");
+
+            // zapis listy
+            for(String element : lista) {
+
+                writer.write(element + "\n");
+            }
+
+            writer.close();
+
+            System.out.println("Zapisano.");
+
+        } catch(Exception e) {
+
+            e.printStackTrace();
+        }
+    }
+}
+```
 
 ### Zawartość:
 - 
@@ -57,6 +135,46 @@ Zaawansowane zagadnienia z OOP:
 ---
 
 ## Temat 5: Pliki
+---
+#### Najbardziej uniwersalny szablon kolokwialny
+```
+import java.io.File;
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            File plik = new File("dane.txt");
+
+            Scanner scanner = new Scanner(plik);
+
+            FileWriter writer =
+                    new FileWriter("wynik.txt");
+
+            while(scanner.hasNextLine()) {
+
+                String linia = scanner.nextLine();
+
+                // operacje na danych
+
+                writer.write(linia + "\n");
+            }
+
+            scanner.close();
+            writer.close();
+
+        } catch(Exception e) {
+
+            e.printStackTrace();
+        }
+    }
+}
+```
+---
 1. Otwieranie pliku
 ```
 Scanner scanner = new Scanner(plik);

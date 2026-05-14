@@ -203,3 +203,125 @@ while(scanner.hasNextLine()) {
             }
 ```
 ---
+### Zapisywanie Pliku:
+Najważniejszy uniwersalny schemat
+```
+FileWriter writer = new FileWriter("dane.txt");
+
+writer.write("tekst");
+
+writer.close();
+```
+- FileWriter
+- write()
+- close()
+```
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            FileWriter writer = new FileWriter("dane.txt");
+
+            writer.write("Hello World");
+
+            writer.close();
+
+            System.out.println("Zapisano plik.");
+
+        } catch(IOException e) {
+
+            e.printStackTrace();
+        }
+    }
+}
+```
+Zapis wielu linii
+```
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            FileWriter writer = new FileWriter("dane.txt");
+
+            writer.write("Adam\n");
+            writer.write("Kasia\n");
+            writer.write("Java\n");
+
+            writer.close();
+
+        } catch(IOException e) {
+
+            e.printStackTrace();
+        }
+    }
+}
+```
+### Dopisywanie do pliku (BARDZO WAŻNE)
+#### nadpisnaie pliku
+```
+new FileWriter("dane.txt");
+```
+#### dopisnaie do pliku
+```
+new FileWriter("dane.txt", true);
+```
+#### przyklad
+```
+FileWriter writer =
+                    new FileWriter("dane.txt", true);
+
+            writer.write("Nowa linia\n");
+
+            writer.close();
+
+            System.out.println("Dopisano.");
+
+```
+#### Zapis liczb
+```
+FileWriter writer =
+                    new FileWriter("liczby.txt");
+
+            int liczba = 50;
+
+            writer.write(String.valueOf(liczba));
+
+            writer.close();
+```
+Uzywamy String.valueof() zeby zamienic liczbe na Stringa.
+#### Zapisanie danych odzielonych srednikiem
+```
+FileWriter writer =
+                    new FileWriter("osoby.txt");
+
+            String imie = "Adam";
+            int wiek = 20;
+
+            writer.write(imie + ";" + wiek + "\n");
+
+            writer.close();
+
+```
+#### Zapis w petli
+```
+FileWriter writer =
+                    new FileWriter("dane.txt");
+
+            for(int i = 1; i <= 5; i++) {
+
+                writer.write("Liczba: " + i + "\n");
+            }
+
+            writer.close();
+```
+---

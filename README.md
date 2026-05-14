@@ -49,7 +49,7 @@ Zaawansowane zagadnienia z OOP:
 ## Temat 4: Listy
 
 ### Pliki a ArrayList
-#### odczyt i dopisnaie do listy
+#### Odczyt i dopisnaie do listy
 ```
 public class Main {
 
@@ -91,7 +91,7 @@ public class Main {
 }
 ```
 
-#### odczyt listy i zapisanie do pliku
+#### Odczyt listy i zapisanie do pliku
 ```
 import java.io.FileWriter;
 import java.util.ArrayList;

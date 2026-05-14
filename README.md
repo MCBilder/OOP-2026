@@ -27,13 +27,59 @@ Podstawowe koncepty Programowania Obiektowego:
 ---
 
 ## Temat 2: Tablice
+### Tworzenie
+```
+Typ[] nazwa = new Typ[rozmiar];
+```
+##### lub
+```
+Typ[] nazwa = {zmienna1, zmienna 2, ....};
+```
+### dodawanie zmiana elementu
+```
+liczby[0] = 100;
+```
 
-Zaawansowane zagadnienia z OOP:
-- 
+### Klasyczny for
+```
+for(int i = 0; i < liczby.length; i++) {
 
-### Zawartość:
--
+    System.out.println(liczby[i]);
+}
+```
+### foreach
+```
+for(int x : liczby) {
 
+    System.out.println(x);
+}
+```
+### suma elementow
+```
+int suma = 0;
+
+for(int x : liczby) {
+
+    suma += x;
+}
+```
+### najwiekszy element
+```
+int max = liczby[0];
+
+for(int x : liczby) {
+
+    if(x > max) {
+
+        max = x;
+    }
+}
+```
+---
+### kopia tablicy
+```
+int[] kopia = liczby.clone();
+```
 ---
 
 ## Temat 3: Plytka i gleboka kopia

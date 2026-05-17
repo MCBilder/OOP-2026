@@ -1,4 +1,4 @@
-# OOP-2026
+1# OOP-2026
 Programowanie Obiektowe Java
 
 ## Spis Treści
@@ -24,6 +24,7 @@ Podstawowe koncepty Programowania Obiektowego:
 - Ćwiczenia praktyczne
 - Kod źródłowy
 
+\t - tabulator
 ---
 
 ## Temat 2: Tablice

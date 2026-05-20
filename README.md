@@ -26,6 +26,13 @@ Podstawowe koncepty Programowania Obiektowego:
 throw new NazwaWyjatku("opis") — rzucasz wyjątek
 Opis w () jest opcjonalny — to wiadomość która pomoże zrozumieć co poszło nie tak. Możesz go pominąć i napisać samo throw new IndexOutOfBoundsException(), ale z opisem łatwiej debugować.
 \t - tabulator
+```
+public Point(Point other) {
+        this.x = other.getX();
+        this.y = other.getY();
+    }
+```
+Konstruktor kopiujący to po prostu konstruktor który przyjmuje Point jako parametr, a wewnątrz przypisujesz pola przez gettery — tak samo jak w konstruktorze z double x, double y tylko że wartości bierzesz z przekazanego obiektu a nie z parametrów.
 ---
 
 ## Temat 2: Tablice

@@ -23,7 +23,8 @@ Podstawowe koncepty Programowania Obiektowego:
 - Definicje i przykłady
 - Ćwiczenia praktyczne
 - Kod źródłowy
-
+throw new NazwaWyjatku("opis") — rzucasz wyjątek
+Opis w () jest opcjonalny — to wiadomość która pomoże zrozumieć co poszło nie tak. Możesz go pominąć i napisać samo throw new IndexOutOfBoundsException(), ale z opisem łatwiej debugować.
 \t - tabulator
 ---
 
